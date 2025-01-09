@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>company</title>
+    <link rel="stylesheet" href="company.css">
+</head>
+<body>
+
+<div class="container">
+    <button class="btn" onclick="toggleQuestions()">company related questions</button>
+
+    <div class="tabs" id="tabs">
+      <div class="tab" onclick="showCompanyQuestions('google')">Google</div>
+      <div class="tab" onclick="showCompanyQuestions('amazon')">Amazon</div>
+      <div class="tab" onclick="showCompanyQuestions('accenture')">Accenture</div>
+      <div class="tab" onclick="showCompanyQuestions('wipro')">Wipro</div>
+      <div class="tab" onclick="showCompanyQuestions('goldmansachs')">Goldman Sachs</div>
+    </div>
+
+    <div class="questions" id="questions">
+      <div id="google-questions" class="company-questions">
+        <h3>Google Questions</h3>
+        <ul>
+          <li>1. Explain the process of database normalization.</li>
+          <li>2. How does a binary search tree work?</li>
+          <li>3. Implement a function to find the longest substring without repeating characters.</li>
+          <li>4. Explain how load balancing works in distributed systems.</li>
+          <li>5. Design a URL shortening service like bit.ly.</li>
+          <li>6. What are the key differences between HTTP/1.1 and HTTP/2?</li>
+          <li>7. How would you optimize a slow SQL query?</li>
+          <li>8. Implement a function to detect cycles in a directed graph.</li>
+          <li>9. What is MapReduce, and how does it work?</li>
+          <li>10. Explain the concept of CAP theorem in distributed systems.</li>
+        </ul>
+      </div>
+
+      <div id="amazon-questions" class="company-questions" style="display: none;">
+        <h3>Amazon Questions</h3>
+        <ul>
+          <li>1. How would you design a scalable e-commerce website?</li>
+          <li>2. Describe the difference between multi-threading and multiprocessing.</li>
+          <li>3. Write a program to find the kth largest element in an array.</li>
+          <li>4. Explain the concept of eventual consistency in databases.</li>
+          <li>5. Design a system to handle millions of file uploads per second.</li>
+          <li>6. What is a microservices architecture?</li>
+          <li>7. Write a function to merge two sorted linked lists.</li>
+          <li>8. Explain how DynamoDB ensures high availability.</li>
+          <li>9. Describe the AWS Lambda architecture.</li>
+          <li>10. How would you implement a cache for frequently accessed data?</li>
+        </ul>
+      </div>
+
+      <div id="accenture-questions" class="company-questions" style="display: none;">
+        <h3>Accenture Questions</h3>
+        <ul>
+          <li>1. What is DevOps, and why is it important?</li>
+          <li>2. Explain the Agile methodology and its benefits.</li>
+          <li>3. What are the differences between SOAP and REST APIs?</li>
+          <li>4. How do you secure an API endpoint?</li>
+          <li>5. Explain the concept of cloud computing.</li>
+          <li>6. How would you implement CI/CD pipelines?</li>
+          <li>7. Describe the importance of design patterns in software development.</li>
+          <li>8. What are containers, and how do they differ from virtual machines?</li>
+          <li>9. Explain how to perform load testing for a web application.</li>
+          <li>10. How would you handle a large-scale data migration project?</li>
+        </ul>
+      </div>
+
+      <div id="wipro-questions" class="company-questions" style="display: none;">
+        <h3>Wipro Questions</h3>
+        <ul>
+          <li>1. What is the difference between an abstract class and an interface?</li>
+          <li>2. Explain the lifecycle of a software development project.</li>
+          <li>3. What is polymorphism in object-oriented programming?</li>
+          <li>4. How would you debug a failing web application?</li>
+          <li>5. What are the various types of software testing?</li>
+          <li>6. Explain the concept of middleware in application development.</li>
+          <li>7. How do you optimize a database query for performance?</li>
+          <li>8. What is the role of an API gateway?</li>
+          <li>9. Explain the advantages of using cloud-native technologies.</li>
+          <li>10. What are the best practices for managing source control?</li>
+        </ul>
+      </div>
+
+      <div id="goldmansachs-questions" class="company-questions" style="display: none;">
+        <h3>Goldman Sachs Questions</h3>
+        <ul>
+          <li>1. Explain the difference between synchronous and asynchronous programming.</li>
+          <li>2. How would you design a trading algorithm?</li>
+          <li>3. What are the key principles of financial modeling?</li>
+          <li>4. How do you ensure the security of sensitive financial data?</li>
+          <li>5. Implement a function to detect anomalies in a time series.</li>
+          <li>6. What is the role of machine learning in finance?</li>
+          <li>7. Describe the process of performing a risk analysis.</li>
+          <li>8. How would you optimize a high-frequency trading system?</li>
+          <li>9. Explain the concept of data warehousing in financial systems.</li>
+          <li>10. What are the challenges in building scalable financial applications?</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<script src="company.js"></script>
+</body>
+</html>

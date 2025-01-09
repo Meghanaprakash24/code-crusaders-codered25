@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Section -->
+        <div class="content" id="login-section">
+            <div class="header">
+                <img src="login.png" alt="Logo" class="logo"> <!-- Logo added here -->
+                <h1>Login</h1>
+            </div>
+            <form>
+                <div class="section">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" placeholder="Enter your email" required>
+                </div>
+                <div class="section">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#signup-section" onclick="showSignup()">Sign up here</a></p>
+        </div>
+
+        <!-- Signup Section -->
+        <div class="content" id="signup-section" style="display: none;">
+            <h1>Signup</h1>
+            <form>
+                <div class="section">
+                    <label for="signup-name">Full Name:</label>
+                    <input type="text" id="signup-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="section">
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email" required>
+                </div>
+                <div class="section">
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#login-section" onclick="showLogin()">Login here</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showSignup() {
+            document.getElementById('login-section').style.display = 'none';
+            document.getElementById('signup-section').style.display = 'block';
+        }
+
+        function showLogin() {
+            document.getElementById('signup-section').style.display = 'none';
+            document.getElementById('login-section').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Tutorials</title>
+    <link rel="stylesheet" href="tutorial.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+           <div class="header-content">
+                <img src="tutorials2.png" alt="Logo" class="logo"> 
+            <h1>Programming Tutorials</h1>
+        </div>
+        </header>
+        <div class="main-content">
+            <aside class="sidebar">
+                <button class="tab-btn" data-tab="c">C Tutorials</button>
+                <button class="tab-btn" data-tab="html">HTML Tutorials</button>
+                <button class="tab-btn" data-tab="css">CSS Tutorials</button>
+                <button class="tab-btn" data-tab="resume">Resume</button>
+                <button class="tab-btn" data-tab="email">Email writting</button>
+                <button class="tab-btn" data-tab="office-etiquette">Office Etiquette</button>
+                <button class="tab-btn" data-tab="reference">References</button>
+                <button class="tab-btn" data-tab="mocktest">Mocktest</button>
+                
+               
+            </aside>
+            <section class="content">
+                <!-- C Tutorials -->
+                <div id="c" class="tab-content">
+                    <h2>C Tutorials</h2>
+                    <p>C is a powerful and widely used general-purpose programming language. It was developed in the early 1970s by Dennis Ritchie at AT&T Bell Labs.</p>
+                    <div class="accordion">
+                        <!-- Topic 1 -->
+                        <div class="accordion-item">
+                            <button class="accordion-title">1. C Introduction</button>
+                            <div class="accordion-content">
+                                <p>C is used for system programming, developing operating systems, embedded systems, and more.</p>
+                                <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, C Language!\n");
+    return 0;
+}</code></pre>
+                            </div>
+                        </div>
+                        <!-- Topic 2 -->
+                        <div class="accordion-item">
+                            <button class="accordion-title">2. C Syntax</button>
+                            <div class="accordion-content">
+                                <p>C syntax refers to the set of rules that define a valid C program.</p>
+                                <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int num = 5;
+    printf("%d\n", num);
+    return 0;
+}</code></pre>
+                            </div>
+                        </div>
+                        <!-- Topic 3 -->
+                        <div class="accordion-item">
+                            <button class="accordion-title">3. C Output</button>
+                            <div class="accordion-content">
+                                <p>The <code>printf</code> function is used in C to display output on the console.</p>
+                                <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    printf("This is a simple output.\n");
+    return 0;
+}</code></pre>
+                            </div>
+                        </div>
+                        <!-- Topic 4 -->
+                        <div class="accordion-item">
+                            <button class="accordion-title">4. C Comments</button>
+                            <div class="accordion-content">
+                                <p>Comments are used to explain code. They are ignored by the compiler and improve code readability.</p>
+                                <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    // This is a single-line comment
+    printf("Hello, World!\n");
+    /* This is a multi-line
+       comment */
+    return 0;
+}</code></pre>
+                            </div>
+                        </div>
+                        <!-- Topic 5 -->
+                        <div class="accordion-item">
+                            <button class="accordion-title">5. C Variables</button>
+                            <div class="accordion-content">
+                                <p>A variable is used to store data. It has a name and a data type.</p>
+                                <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int age = 25;  // Declare and initialize an integer variable
+    printf("Age: %d\n", age);
+    return 0;
+}</code></pre>
+                            </div>
+                        </div>
+                        <!-- Topic 6 -->
+                        <div class="accordion-item">
+                            <button class="accordion-title">6. C Data Types</button>
+                            <div class="accordion-content">
+                                <p>C has various data types for storing different kinds of data.</p>
+                                <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int num = 10;
+    float price = 19.99;
+    char letter = 'A';
+    
+    printf("Integer: %d, Float: %.2f, Character: %c\n", num, price, letter);
+    return 0;
+}</code></pre>
+                            </div>
+                        </div>
+                        <!-- Topic 7 -->
+                        <div class="accordion-item">
+                            <button class="accordion-title">7. C Constants</button>
+                            <div class="accordion-content">
+                                <p>Constants are values that cannot be changed during the execution of a program.</p>
+                                <pre><code>#include &lt;stdio.h&gt;
+
+#define PI 3.14  // Define a constant using #define
+
+int main() {
+    printf("Value of PI: %.2f\n", PI);
+    return 0;
+}</code></pre>
+                            </div>
+                        </div>
+                        <!-- Topic 8 -->
+                        <div class="accordion-item">
+                            <button class="accordion-title">8. C Operators</button>
+                            <div class="accordion-content">
+                                <p>Operators in C are symbols that perform operations on variables and values.</p>
+                                <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 10, b = 5;
+    printf("Sum: %d\n", a + b);  // Arithmetic operator
+    return 0;
+}</code></pre>
+                            </div>
+                        </div>
+                        <!-- Topic 9 -->
+                        <div class="accordion-item">
+                            <button class="accordion-title">9. C Booleans</button>
+                            <div class="accordion-content">
+                                <p>In C, boolean values are represented by 0 for false and 1 for true.</p>
+                                <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int isTrue = 1;  // True
+    if (isTrue) {
+        printf("Condition is true!\n");
+    }
+    return 0;
+}</code></pre>
+                            </div>
+                        </div>
+                        <!-- Add the rest of the topics -->
+                    </div>
+                </div>
+                <!-- Placeholder for other tutorials -->
+               <!-- HTML Tutorials -->
+<div id="html" class="tab-content">
+    <h2>HTML Tutorials</h2>
+    <p>HTML stands for HyperText Markup Language and is the standard language used to create webpages. It structures the content on the web using various elements like headings, paragraphs, images, and links.</p>
+    <div class="accordion">
+        <!-- Topic 1 -->
+        <div class="accordion-item">
+            <button class="accordion-title">1. HTML Introduction</button>
+            <div class="accordion-content">
+                <p>HTML is the foundation of all web content. It defines the structure of webpages using tags to organize and display content.</p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;HTML Introduction&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to HTML!&lt;/h1&gt;
+        &lt;p&gt;This is a basic HTML page.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+        </div>
+        <!-- Topic 2 -->
+        <div class="accordion-item">
+            <button class="accordion-title">2. HTML Syntax</button>
+            <div class="accordion-content">
+                <p>HTML syntax involves using tags enclosed in angle brackets to define elements and structure content.</p>
+                <pre><code>&lt;h1&gt;Heading Level 1&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;a href="https://example.com"&gt;This is a link&lt;/a&gt;</code></pre>
+            </div>
+        </div>
+        <!-- Topic 3 -->
+        <div class="accordion-item">
+            <button class="accordion-title">3. HTML Elements</button>
+            <div class="accordion-content">
+                <p>HTML elements are the building blocks of web pages. They are enclosed in tags, such as &lt;div&gt;, &lt;header&gt;, and &lt;footer&gt;.</p>
+                <pre><code>&lt;div&gt;Content goes here&lt;/div&gt;
+&lt;header&gt;Header content&lt;/header&gt;
+&lt;footer&gt;Footer content&lt;/footer&gt;</code></pre>
+            </div>
+        </div>
+        <!-- Topic 4 -->
+        <div class="accordion-item">
+            <button class="accordion-title">4. HTML Headings</button>
+            <div class="accordion-content">
+                <p>HTML provides six levels of headings, from &lt;h1&gt; (the largest) to &lt;h6&gt; (the smallest).</p>
+                <pre><code>&lt;h1&gt;This is Heading 1&lt;/h1&gt;
+&lt;h2&gt;This is Heading 2&lt;/h2&gt;
+&lt;h3&gt;This is Heading 3&lt;/h3&gt;</code></pre>
+            </div>
+        </div>
+        <!-- Topic 5 -->
+        <div class="accordion-item">
+            <button class="accordion-title">5. HTML Links</button>
+            <div class="accordion-content">
+                <p>Links in HTML are created using the &lt;a&gt; tag with the href attribute to define the target URL.</p>
+                <pre><code>&lt;a href="https://example.com"&gt;Click here&lt;/a&gt;</code></pre>
+            </div>
+        </div>
+        <!-- Topic 6 -->
+        <div class="accordion-item">
+            <button class="accordion-title">6. HTML Images</button>
+            <div class="accordion-content">
+                <p>Images in HTML are added using the &lt;img&gt; tag with the src attribute to specify the image source and alt attribute for alternative text.</p>
+                <pre><code>&lt;img src="image.jpg" alt="Description of image"&gt;</code></pre>
+            </div>
+        </div>
+        <!-- Topic 7 -->
+        <div class="accordion-item">
+            <button class="accordion-title">7. HTML Lists</button>
+            <div class="accordion-content">
+                <p>HTML supports ordered lists (&lt;ol&gt;) and unordered lists (&lt;ul&gt;) for organizing items.</p>
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <!-- Topic 8 -->
+        <div class="accordion-item">
+            <button class="accordion-title">8. HTML Forms</button>
+            <div class="accordion-content">
+                <p>Forms in HTML allow users to input data and submit it to the server.</p>
+                <pre><code>&lt;form&gt;
+    &lt;input type="text" placeholder="Enter name"&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            </div>
+        </div>
+        <!-- Topic 9 -->
+        <div class="accordion-item">
+            <button class="accordion-title">9. HTML Tables</button>
+            <div class="accordion-content">
+                <p>Tables in HTML are created using the &lt;table&gt; tag, with &lt;tr&gt; for rows, &lt;th&gt; for headers, and &lt;td&gt; for cells.</p>
+                <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <!-- CSS Tutorials -->
+<div id="css" class="tab-content">
+    <h2>CSS Tutorials</h2>
+    <p>CSS (Cascading Style Sheets) is used to style HTML elements. It defines the layout, colors, fonts, and overall appearance of a webpage.</p>
+    <div class="accordion">
+        <!-- Topic 1 -->
+        <div class="accordion-item">
+            <button class="accordion-title">1. CSS Introduction</button>
+            <div class="accordion-content">
+                <p>CSS is used to style and visually format HTML elements. It is placed either inline, in a &lt;style&gt; block, or in an external stylesheet.</p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;CSS Introduction&lt;/title&gt;
+        &lt;style&gt;
+            body {
+                background-color: lightblue;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to CSS!&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+        </div>
+        <!-- Topic 2 -->
+        <div class="accordion-item">
+            <button class="accordion-title">2. CSS Syntax</button>
+            <div class="accordion-content">
+                <p>CSS syntax consists of selectors and declarations. A selector targets an HTML element, while a declaration defines the style for that element.</p>
+                <pre><code>selector {
+    property: value;
+}</code></pre>
+            </div>
+        </div>
+        <!-- Topic 3 -->
+        <div class="accordion-item">
+            <button class="accordion-title">3. CSS Selectors</button>
+            <div class="accordion-content">
+                <p>CSS selectors are used to select HTML elements to apply styles. Examples include element selectors, class selectors, and ID selectors.</p>
+                <pre><code>/* Element selector */
+p {
+    color: red;
+}
+
+/* Class selector */
+.classname {
+    font-size: 16px;
+}
+
+/* ID selector */
+#idname {
+    margin: 20px;
+}</code></pre>
+            </div>
+        </div>
+        <!-- Topic 4 -->
+        <div class="accordion-item">
+            <button class="accordion-title">4. CSS Colors</button>
+            <div class="accordion-content">
+                <p>CSS allows you to define colors for text, background, borders, and more using various color formats such as named colors, hex codes, RGB, and HSL.</p>
+                <pre><code>/* Named color */
+h1 {
+    color: blue;
+}
+
+/* Hex color */
+p {
+    color: #ff6347;
+}
+
+/* RGB color */
+div {
+    background-color: rgb(255, 99, 71);
+}</code></pre>
+            </div>
+        </div>
+        <!-- Topic 5 -->
+        <div class="accordion-item">
+            <button class="accordion-title">5. CSS Backgrounds</button>
+            <div class="accordion-content">
+                <p>You can set the background color, image, and other background properties for an element using the background property in CSS.</p>
+                <pre><code>/* Background color */
+body {
+    background-color: lightgray;
+}
+
+/* Background image */
+header {
+    background-image: url('background.jpg');
+    background-size: cover;
+}</code></pre>
+            </div>
+        </div>
+        <!-- Topic 6 -->
+        <div class="accordion-item">
+            <button class="accordion-title">6. CSS Borders</button>
+            <div class="accordion-content">
+                <p>CSS borders allow you to style the edges of HTML elements. You can define the border width, style, and color.</p>
+                <pre><code>div {
+    border: 2px solid black;
+}
+
+p {
+    border-top: 3px dashed red;
+}</code></pre>
+            </div>
+        </div>
+        <!-- Topic 7 -->
+        <div class="accordion-item">
+            <button class="accordion-title">7. CSS Margin and Padding</button>
+            <div class="accordion-content">
+                <p>CSS margins are used to create space outside an element, while padding is used to create space inside an element, between the element's content and its border.</p>
+                <pre><code>div {
+    margin: 20px;
+    padding: 10px;
+}</code></pre>
+            </div>
+        </div>
+        <!-- Topic 8 -->
+        <div class="accordion-item">
+            <button class="accordion-title">8. CSS Box Model</button>
+            <div class="accordion-content">
+                <p>The CSS box model describes the rectangular boxes generated for elements, which consist of content, padding, border, and margin.</p>
+                <pre><code>div {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+}</code></pre>
+            </div>
+        </div>
+        <!-- Topic 9 -->
+        <div class="accordion-item">
+            <button class="accordion-title">9. CSS Fonts</button>
+            <div class="accordion-content">
+                <p>CSS allows you to define fonts, font sizes, weights, families, and styles for text elements.</p>
+                <pre><code>body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-weight: bold;
+}</code></pre>
+            </div>
+        </div>
+        <!-- Topic 10 -->
+        <div class="accordion-item">
+            <button class="accordion-title">10. CSS Links</button>
+            <div class="accordion-content">
+                <p>CSS can be used to style links, including defining different styles for the link’s normal, hover, and visited states.</p>
+                <pre><code>a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}</code></pre>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Resume Tutorials -->
+<div id="resume" class="tab-content">
+    <h2>Resume Writing Tutorials</h2>
+    <p>Creating a strong resume is key to landing job interviews and getting hired. In this section, we will explore how to craft an effective resume that showcases your skills and experience.</p>
+    <div class="accordion">
+        <!-- Topic 1 -->
+        <div class="accordion-item">
+            <button class="accordion-title">1. How to Write a Resume</button>
+            <div class="accordion-content">
+                <p>A resume is a summary of your skills, qualifications, and experience. Here’s how you can write a clear and professional resume:</p>
+                <ul>
+                    <li><strong>Personal Information:</strong> Include your name, contact details (phone number, email), and location.</li>
+                    <li><strong>Professional Summary:</strong> A brief introduction that highlights your experience, strengths, and career goals.</li>
+                    <li><strong>Skills:</strong> List your technical and soft skills that are relevant to the job.</li>
+                    <li><strong>Work Experience:</strong> Include details about your past roles, achievements, and responsibilities.</li>
+                    <li><strong>Education:</strong> Mention your academic background, degrees, and certifications.</li>
+                    <li><strong>Additional Sections:</strong> You can include volunteer work, projects, awards, or other achievements that highlight your qualifications.</li>
+                </ul>
+                <p><strong>Example Resume Structure:</strong></p>
+                <pre><code>Name: John Doe
+Contact Info: johndoe@email.com | (123) 456-7890 | LinkedIn: linkedin.com/in/johndoe
+
+Professional Summary:
+Motivated software developer with 3+ years of experience in developing scalable applications using Python, Java, and SQL. Passionate about solving complex problems and continuously improving technical skills.
+
+Skills:
+- Programming Languages: Python, Java, C++
+- Web Development: HTML, CSS, JavaScript
+- Databases: SQL, MySQL
+- Tools: Git, Docker, JIRA
+
+Work Experience:
+Software Developer | ABC Corp | January 2021 – Present
+- Developed and maintained web applications using Python and Flask.
+- Collaborated with cross-functional teams to implement software solutions that improved operational efficiency.
+
+Education:
+B.Tech in Computer Science | XYZ University | 2017 – 2021</code></pre>
+            </div>
+        </div>
+        <!-- Topic 2 -->
+        <div class="accordion-item">
+            <button class="accordion-title">2. How to Make Your Resume Stand Out</button>
+            <div class="accordion-content">
+                <p>To make your resume stand out in a competitive job market, consider the following tips:</p>
+                <ul>
+                    <li><strong>Tailor Your Resume:</strong> Customize your resume for each job application. Focus on the skills and experiences that align with the job description.</li>
+                    <li><strong>Use Action Words:</strong> Use strong action verbs (e.g., developed, managed, improved, designed) to describe your achievements and responsibilities.</li>
+                    <li><strong>Quantify Achievements:</strong> Whenever possible, use numbers and metrics to show the impact of your work (e.g., increased sales by 20%).</li>
+                    <li><strong>Be Concise:</strong> Keep your resume to 1-2 pages. Avoid unnecessary information, and focus on what’s most important.</li>
+                    <li><strong>Proofread:</strong> Ensure there are no grammar or spelling mistakes. A clean and error-free resume reflects your attention to detail.</li>
+                </ul>
+                <p><strong>Example of Strong Action Words:</strong></p>
+                <pre><code>Led, Managed, Created, Increased, Implemented, Designed, Analyzed, Developed, Streamlined</code></pre>
+            </div>
+        </div>
+        <!-- Topic 3 -->
+        <div class="accordion-item">
+            <button class="accordion-title">3. Formatting Your Resume</button>
+            <div class="accordion-content">
+                <p>Choosing the right format for your resume is essential. The most common resume formats are:</p>
+                <ul>
+                    <li><strong>Chronological Resume:</strong> Lists work experience in reverse chronological order. Ideal for candidates with a strong and consistent work history.</li>
+                    <li><strong>Functional Resume:</strong> Focuses on skills and experience rather than work history. Great for people changing careers or with gaps in employment.</li>
+                    <li><strong>Combination Resume:</strong> A hybrid format that combines both chronological and functional elements. It highlights skills while also showcasing a detailed work history.</li>
+                </ul>
+                <p><strong>Formatting Tips:</strong></p>
+                <ul>
+                    <li>Use a simple, clean layout. Avoid heavy use of graphics or colors.</li>
+                    <li>Use clear section headings (e.g., "Experience," "Education," "Skills").</li>
+                    <li>Choose a professional font such as Arial, Times New Roman, or Calibri.</li>
+                </ul>
+                <p><strong>Example of Resume Formatting:</strong></p>
+                <pre><code>Header:
+Name | Contact Info
+
+Section 1: Professional Summary
+Section 2: Skills
+Section 3: Work Experience
+Section 4: Education
+Section 5: Projects (optional)
+Section 6: Certifications & Awards (optional)</code></pre>
+            </div>
+        </div>
+        <!-- Topic 4 -->
+        <div class="accordion-item">
+            <button class="accordion-title">4. Perfecting Your Resume for Job Placement</button>
+            <div class="accordion-content">
+                <p>To enhance your chances of getting hired, you should focus on the following strategies:</p>
+                <ul>
+                    <li><strong>Optimize for ATS:</strong> Many companies use Applicant Tracking Systems (ATS) to filter resumes. To make your resume ATS-friendly, include relevant keywords from the job description.</li>
+                    <li><strong>Include Relevant Keywords:</strong> Use terms that match the job description. If you’re applying for a software developer role, for example, mention programming languages and tools relevant to the job.</li>
+                    <li><strong>Highlight Key Achievements:</strong> Showcase your most relevant accomplishments in each role you’ve had, making them stand out in the experience section.</li>
+                    <li><strong>Professional Format and Design:</strong> Maintain a clean and organized layout to make your resume easy to read.</li>
+                    <li><strong>Cover Letter:</strong> Always accompany your resume with a personalized cover letter. It’s an opportunity to highlight your passion for the role and the company.</li>
+                </ul>
+                <p><strong>Example of ATS-Friendly Resume Section:</strong></p>
+                <pre><code>Experience:
+Software Developer | XYZ Ltd | 2020 – Present
+- Developed a custom CMS using Python and Django, resulting in a 25% decrease in load times.
+- Integrated third-party APIs, reducing development time by 15%.</code></pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Email Writing Tutorials -->
+<div id="email" class="tab-content">
+    <h2>Email Writing Tutorials</h2>
+    <p>Email writing is an essential skill for professional communication. Whether you're applying for a job, reaching out to a colleague, or sending a formal request, it's important to craft your emails in a clear and effective manner.</p>
+    <div class="accordion">
+        <!-- Topic 1 -->
+        <div class="accordion-item">
+            <button class="accordion-title">1. How to Write a Professional Email</button>
+            <div class="accordion-content">
+                <p>Writing a professional email involves using a formal tone, clear structure, and attention to detail. Here are the key components of a professional email:</p>
+                <ul>
+                    <li><strong>Subject Line:</strong> Keep it short, clear, and relevant to the content of the email. Example: "Application for Software Developer Position."</li>
+                    <li><strong>Salutation:</strong> Start with a respectful greeting. Use "Dear [Name]" for formal communication, or "Hello [Name]" for semi-formal communication.</li>
+                    <li><strong>Body:</strong> Be concise and clear in your message. State the purpose of your email early on, and provide supporting details. Keep paragraphs short and to the point.</li>
+                    <li><strong>Closing:</strong> End the email with a polite closing. Examples include "Best regards," "Sincerely," or "Kind regards."</li>
+                    <li><strong>Signature:</strong> Include your full name, contact information, and any other relevant details (e.g., job title or LinkedIn profile). </li>
+                </ul>
+                <p><strong>Example of a Professional Email:</strong></p>
+                <pre><code>Subject: Application for Software Developer Position
+
+Dear Hiring Manager,
+
+I hope this email finds you well. I am writing to express my interest in the Software Developer position at XYZ Corp. With a degree in Computer Science and 3+ years of experience working with Python and Java, I am confident that I can contribute to your team.
+
+I have attached my resume and portfolio for your review. I would appreciate the opportunity to discuss how my skills and experience align with your company's needs.
+
+Thank you for considering my application. I look forward to hearing from you soon.
+
+Best regards,
+John Doe
+[Phone Number] | [Email Address]</code></pre>
+            </div>
+        </div>
+        <!-- Topic 2 -->
+        <div class="accordion-item">
+            <button class="accordion-title">2. How to Make Your Email Stand Out</button>
+            <div class="accordion-content">
+                <p>To make your email stand out in a professional setting, consider the following tips:</p>
+                <ul>
+                    <li><strong>Use a Clear and Relevant Subject Line:</strong> The subject line should quickly convey the purpose of your email. A clear subject line increases the chances that your email will be opened and read.</li>
+                    <li><strong>Be Concise:</strong> Keep the email short and to the point. Avoid unnecessary details that could overwhelm the reader.</li>
+                    <li><strong>Personalize the Message:</strong> If possible, address the recipient by name, and tailor the content of the email to the specific person or situation.</li>
+                    <li><strong>Use a Professional Tone:</strong> Even in casual situations, it’s important to maintain professionalism in your tone. Avoid slang or overly informal language.</li>
+                    <li><strong>Proofread:</strong> Ensure your email is free from spelling, grammar, and punctuation errors. A polished email demonstrates attention to detail.</li>
+                </ul>
+                <p><strong>Example of an Attention-Grabbing Email:</strong></p>
+                <pre><code>Subject: Your Expertise is Needed – Let's Collaborate!
+
+Dear [Recipient Name],
+
+I hope you're doing well! I recently came across your work on [Project/Topic], and I was really impressed by your expertise. I’m reaching out to explore the possibility of collaborating on a project that I believe aligns with your skills and interests.
+
+If you’re open to discussing this further, I would love to schedule a brief call at your convenience.
+
+Looking forward to hearing from you!
+
+Best regards,
+John Doe</code></pre>
+            </div>
+        </div>
+        <!-- Topic 3 -->
+        <div class="accordion-item">
+            <button class="accordion-title">3. Common Email Mistakes to Avoid</button>
+            <div class="accordion-content">
+                <p>Here are some common mistakes to avoid when writing professional emails:</p>
+                <ul>
+                    <li><strong>Being Too Informal:</strong> While you may be familiar with the recipient, always maintain a level of professionalism in your language.</li>
+                    <li><strong>Ignoring Grammar and Spelling:</strong> Mistakes in grammar or spelling can leave a poor impression. Always proofread your email before sending it.</li>
+                    <li><strong>Not Using a Proper Greeting or Closing:</strong> Omitting a greeting or closing can make the email seem abrupt or impolite.</li>
+                    <li><strong>Sending Emails Without a Clear Purpose:</strong> Every email should have a clear objective. Make sure your recipient knows what action is required, if any.</li>
+                    <li><strong>Being Too Long-Winded:</strong> People often skim emails, so make sure to keep your message clear and concise. Avoid lengthy paragraphs.</li>
+                </ul>
+                <p><strong>Example of an Email with Mistakes:</strong></p>
+                <pre><code>Subject: job opening
+
+hi, i want to apply for the software developer job.
+
+please get back to me when you can.
+
+thanks, John</code></pre>
+            </div>
+        </div>
+        <!-- Topic 4 -->
+        <div class="accordion-item">
+            <button class="accordion-title">4. How to Write a Follow-Up Email</button>
+            <div class="accordion-content">
+                <p>Following up after sending an initial email is crucial in a professional setting, especially when you're awaiting a response. Here’s how to write an effective follow-up email:</p>
+                <ul>
+                    <li><strong>Wait for the Right Amount of Time:</strong> Give the recipient a few days (typically 3-5 business days) to respond before sending a follow-up.</li>
+                    <li><strong>Be Polite:</strong> Start with a courteous greeting and express that you understand they may be busy.</li>
+                    <li><strong>Restate the Purpose:</strong> Briefly mention the purpose of your initial email and the reason for following up.</li>
+                    <li><strong>Ask for a Response:</strong> Politely ask if they have had a chance to review your email or if there’s any additional information they need.</li>
+                </ul>
+                <p><strong>Example of a Follow-Up Email:</strong></p>
+                <pre><code>Subject: Following Up on My Job Application
+
+Dear [Hiring Manager],
+
+I hope you're doing well. I wanted to follow up on my application for the Software Developer position at XYZ Corp, which I sent on [date]. I would appreciate any updates you may have regarding the status of my application.
+
+If there’s any additional information or documents you need, please let me know. I look forward to hearing from you.
+
+Best regards,
+John Doe</code></pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Office Etiquette Tutorials -->
+<div id="office-etiquette" class="tab-content">
+    <h2>Office Etiquette Tutorials</h2>
+    <p>Office etiquette is the set of practices, behaviors, and manners that are considered appropriate in the workplace. It includes both verbal and non-verbal communication, as well as professional behavior that promotes respect and productivity within the office environment.</p>
+    
+    <div class="accordion">
+        <!-- Topic 1 -->
+        <div class="accordion-item">
+            <button class="accordion-title">1. What is Office Etiquette?</button>
+            <div class="accordion-content">
+                <p>Office etiquette refers to the customary code of polite behavior and professional conduct within a workplace. It encompasses how you communicate with colleagues, how you interact during meetings, how you present yourself, and how you manage your workspace.</p>
+                <ul>
+                    <li><strong>Respect for Others:</strong> Always show respect towards your colleagues, supervisors, and subordinates. This includes listening actively, not interrupting, and showing empathy in conversations.</li>
+                    <li><strong>Professional Appearance:</strong> Dress appropriately for the workplace, adhering to the company's dress code. Maintaining a neat and professional appearance is important in creating a good impression.</li>
+                    <li><strong>Proper Communication:</strong> Be mindful of how you communicate, whether it's via email, phone calls, or in-person conversations. Be polite, concise, and clear in your communications.</li>
+                    <li><strong>Time Management:</strong> Be punctual for meetings, adhere to deadlines, and avoid wasting others' time by being prepared and organized.</li>
+                </ul>
+                <p><strong>Example of Good Office Etiquette:</strong> Greeting colleagues with a smile, offering help when needed, and maintaining a positive attitude in the workplace.</p>
+            </div>
+        </div>
+        <!-- Topic 2 -->
+        <div class="accordion-item">
+            <button class="accordion-title">2. How to Practice Good Office Etiquette</button>
+            <div class="accordion-content">
+                <p>Here are some tips for practicing good office etiquette:</p>
+                <ul>
+                    <li><strong>Be On Time:</strong> Punctuality shows respect for other people's time. Always arrive on time for work, meetings, and appointments.</li>
+                    <li><strong>Respect Personal Space:</strong> Be aware of personal boundaries and respect your colleagues' workspace. Avoid interrupting someone when they are deep in concentration, and always knock before entering someone's office or cubicle.</li>
+                    <li><strong>Keep Conversations Professional:</strong> Avoid discussing overly personal or controversial topics at work. Stick to neutral or work-related conversations to maintain a professional environment.</li>
+                    <li><strong>Use Email Wisely:</strong> When sending emails, ensure that your communication is clear, polite, and professional. Proofread your emails for spelling or grammatical errors before hitting "send."</li>
+                    <li><strong>Show Appreciation:</strong> Acknowledge your colleagues' contributions and thank them for their help. Small gestures like saying "thank you" go a long way in maintaining good relationships at work.</li>
+                </ul>
+                <p><strong>Example:</strong> If a colleague helps you with a task, thank them for their assistance via email or in person. This fosters a positive and cooperative work environment.</p>
+            </div>
+        </div>
+        <!-- Topic 3 -->
+        <div class="accordion-item">
+            <button class="accordion-title">3. Advantages of Practicing Office Etiquette</button>
+            <div class="accordion-content">
+                <p>Practicing office etiquette can have significant advantages for both individuals and organizations. Some of the key benefits include:</p>
+                <ul>
+                    <li><strong>Improved Communication:</strong> When you communicate effectively and politely, it reduces misunderstandings and fosters better collaboration among team members.</li>
+                    <li><strong>Enhanced Professional Image:</strong> Practicing good office etiquette contributes to a positive personal and professional image. It shows that you are respectful, organized, and considerate of others.</li>
+                    <li><strong>Better Work Relationships:</strong> Respectful interactions and good manners help in building strong, trustworthy relationships with colleagues, which can lead to better teamwork and a more enjoyable work environment.</li>
+                    <li><strong>Increased Productivity:</strong> A positive and respectful work environment promotes productivity, as employees feel more motivated and comfortable in their roles.</li>
+                    <li><strong>Career Advancement:</strong> Demonstrating good office etiquette can help you stand out to managers and supervisors, leading to potential career growth and advancement opportunities.</li>
+                </ul>
+                <p><strong>Example:</strong> A person who arrives on time, respects the opinions of others, and handles conflicts professionally is more likely to earn the trust and respect of their superiors and peers.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="reference" class="tab-content">
+    <h2>Reference Videos</h2>
+    <p>Here are some valuable YouTube references to help you improve your skills:</p>
+    <ul>
+        <li><a href="https://youtu.be/y3R9e2L8I9E?si=Zeh9Rg-t4Cv9jcqu" target="_blank">Resume Writing Guide</a></li>
+        <li><a href="https://youtu.be/1XctnF7C74s?si=hfg6oW1V6s0Va_a0" target="_blank">Professional Email Writing</a></li>
+        <li><a href="https://youtu.be/PuMX30xZktE?si=xzvmJTk-WuE8znNl" target="_blank">Office Etiquette</a></li>
+        <li><a href="https://youtu.be/PfFFHJqC0cA?si=bqgY58XE1omRZcVG" target="_blank">Meeting Etiquette</a></li>
+    </ul>
+</div>
+
+
+<div id="mocktest" class="tab-content">
+    <main>
+        <!-- Mock Test Section -->
+        <section id="mock-test">
+            <h2>Mock Test</h2>
+            <div id="quiz-container"></div>
+            <button id="submit-btn">Submit Test</button>
+            <p id="result"></p>
+        </section>
+        </main>
+
+</div>
+
+                <div id="javascript" class="tab-content">
+                    <h2>JavaScript Tutorials</h2>
+                    <p>Content for JavaScript tutorials will go here.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="tutorial.js"></script>
+
+
+</body>
+</html>
