@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Opportunities</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: rgba(0, 123, 255, 0.8);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        nav button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        nav button:hover {
+            background-color: #003f7d;
+            transform: scale(1.05);
+        }
+
+        /* Image below Header */
+        .header-image {
+            width: 100%;
+            height: 400px; /* Adjust the height for a better fit */
+            object-fit: cover;
+            margin-top: 2rem; /* Add space between header and image */
+            display: block;
+            transition: opacity 0.5s ease;
+        }
+
+        /* Content Section */
+        .content {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1000px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        .content.active {
+            display: block;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .content h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #ffcc00;
+            margin-bottom: 1.5rem;
+        }
+
+        .internship-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1a1a1a;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        .internship-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgb(6, 238, 251);
+        }
+
+        .internship-card a {
+            text-decoration: none;
+            color: #ffcc00;
+            font-size: 1.3rem;
+            font-weight: 500;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .internship-card a:hover {
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem;
+            }
+
+            .content {
+                width: 90%;
+            }
+
+            /* Make the header image responsive */
+            .header-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h1>Internship Opportunities</h1>
+        <button id="showInternships">View Internships</button>
+    </nav>
+
+    <!-- Add Image Below Header -->
+    <img src="internship.jpg " alt="Internship Image" class="header-image" id="headerImage">
+
+    <!-- Internship Links Content -->
+    <div class="content" id="internshipLinks">
+        <h2>Explore Top Internship Opportunities</h2>
+        <div class="internship-card">
+            <a href="https://theglobalscholarship.org/internships/google-software-engineering-winter-internship-2025?source=main&utm_source=chatgpt.com#google_vignette" target="_blank">
+                Google Software Engineering Winter Internship 2025
+            </a>
+        </div>
+        <div class="internship-card">
+            <a href="https://www.qualcomm.com/company/careers/internships-and-early-in-career-opportunities/india?utm_source=chatgpt.com" target="_blank">
+                Qualcomm Internships and Early Career Opportunities
+            </a>
+        </div>
+        <div class="internship-card">
+            <a href="https://internshala.com/internship/details/artificial-intelligence-ai-internship-in-multiple-locations-at-mayura-consultancy1735877896" target="_blank">
+                AI Internship at Mayura Consultancy
+            </a>
+        </div>
+        <div class="internship-card">
+            <a href="https://in.indeed.com/viewjob?jk=3faeef749d472b2c&from=shareddesktop" target="_blank">
+                Indeed AI Internship
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showInternships').addEventListener('click', function() {
+            const content = document.getElementById('internshipLinks');
+            const headerImage = document.getElementById('headerImage');
+            content.classList.toggle('active');
+            // Hide the image when internships are shown
+            if (content.classList.contains('active')) {
+                headerImage.style.display = 'none'; // Hides the image
+            } else {
+                headerImage.style.display = 'block'; // Shows the image again
+            }
+        });
+    </script>
+
+</body>
+</html>

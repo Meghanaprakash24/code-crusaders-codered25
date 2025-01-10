@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Contact</title>
+    <link rel="stylesheet" href="resume.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: rgb(240, 233, 25);
+            padding: 10px 20px;
+        }
+        nav h1 {
+            margin: 0;
+        }
+        nav button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav button:hover {
+            background-color: #777;
+        }
+        .header-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .content {
+            display: none;
+            padding: 20px;
+        }
+        .content.active {
+            display: block;
+        }
+        video {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .about-content {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        .about-content h2 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h1>About us</h1>
+        
+    </nav>
+
+    <!-- About & Contact Section -->
+    <section id="about-contact" class="content active">
+        <video controls>
+            <source src="aboutus.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- About Content Section -->
+        <div class="about-content">
+            
+            <h2>Who We Are</h2>
+            <p>
+                Welcome to Climb Up – your personal guide to scaling the heights of career success!
+            </p>
+            <p>
+                We are a passionate group of innovators and problem-solvers who believe that every student deserves a chance to shine in the world of placements and interviews. That’s why we’ve created a cutting-edge AI-powered platform designed to supercharge your preparation journey and give you the confidence to excel.
+            </p>
+            <p>
+                At Climb Up, we combine advanced technology with a human touch to offer:
+            </p>
+            <ul>
+                <li>Realistic Mock Interviews: Simulate real-world interview experiences tailored to your specific career goals.</li>
+                <li>Personalized Feedback: Our AI analyzes your performance and provides detailed, actionable insights to help you grow.</li>
+                <li>Targeted Technical Training: Hone your skills with customized resources that focus on your weak spots.</li>
+                <li>Resume Evaluation & Builder: Craft an impressive resume that stands out, with step-by-step guidance and professional evaluation.</li>
+                <li>Engaging Streaks: Keep your motivation high with streaks that reward consistent effort and hard work.</li>
+            </ul>
+            <p>
+                Whether you’re prepping for your first interview or aiming to land your dream job, we’re here to help you climb the ladder of success. With Climb Up, every step is personalized, every milestone celebrated, and every challenge conquered.
+            </p>
+            <p>
+                Whether you're a student preparing for your first job or a professional looking to upskill, we are here to help you
+                climb higher, reach further, and achieve more. Join us in building your future today.
+            </p>
+        </div>
+
+        <h2>Contact Us</h2>
+        <p>If you have any queries or need assistance, feel free to reach out to us.</p>
+        <p>Email: support@climbup.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Main Street, Banglore, Country</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Our Company. All rights reserved.
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

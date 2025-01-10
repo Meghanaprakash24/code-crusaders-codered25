@@ -124,4 +124,92 @@ html {
    box-shadow: var(--box-shadow);
 }
 
+/* GitHub-style Streak Container */
+.streak-container {
+    background: white;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    margin: 0 20px;
+}
 
+.streak-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.streak-count-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.streak-flame {
+    font-size: 1.4em;
+}
+
+#streak-count {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #24292e;
+}
+
+.streak-label {
+    color: #586069;
+    font-size: 0.9em;
+}
+
+/* GitHub-style Contribution Graph */
+.contribution-graph {
+    padding: 5px;
+}
+
+#contribution-blocks {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+    margin-top: 5px;
+}
+
+.contribution-block {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.contribution-level-0 { background-color: #ebedf0; }
+.contribution-level-1 { background-color: #9be9a8; }
+.contribution-level-2 { background-color: #40c463; }
+.contribution-level-3 { background-color: #30a14e; }
+.contribution-level-4 { background-color: #216e39; }
+
+/* Tooltip styles */
+.contribution-block:hover {
+    transform: scale(1.1);
+}
+
+.tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .streak-container {
+        margin: 10px 0;
+        width: 100%;
+    }
+    
+    #contribution-blocks {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

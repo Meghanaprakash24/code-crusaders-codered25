@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interview Assistant</title>
+    <link rel="stylesheet" href="interview.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="interview.png" alt="Logo" class="logo">
+                <h1>AI Interview Assistant</h1>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="interview-area">
+                <div class="chat-container">
+                    <div id="chat-messages"></div>
+                    <div class="user-input">
+                        <input type="text" id="user-response" placeholder="Type your answer here...">
+                        <button onclick="submitResponse()">Submit</button>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button onclick="startInterview('technical')">Technical Interview</button>
+                    <button onclick="startInterview('behavioral')">Behavioral Interview</button>
+                    <button onclick="startInterview('coding')">Coding Interview</button>
+                </div>
+            </div>
+            <div class="feedback-area">
+                <h3>Interview Feedback</h3>
+                <div id="feedback-content"></div>
+                <div class="performance-metrics">
+                    <div class="metric">
+                        <span>Technical Accuracy</span>
+                        <div class="progress-bar">
+                            <div id="technical-score" class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Communication</span>
+                        <div class="progress-bar">
+                            <div id="communication-score" class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Problem Solving</span>
+                        <div class="progress-bar">
+                            <div id="problem-solving-score" class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="interview.js"></script>
+</body>
+</html>
